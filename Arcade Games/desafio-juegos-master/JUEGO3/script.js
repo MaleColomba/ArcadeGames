@@ -116,8 +116,8 @@ function collisionDetection() {
 }
 
 function drawScore() {
-    ctx.font = "20px calibri";
-    ctx.fillStyle = "black";
+    ctx.font = "26px calibri";
+    ctx.fillStyle = "white";
     ctx.fillText("Puntaje: " + score, 8, 20);
 }
 

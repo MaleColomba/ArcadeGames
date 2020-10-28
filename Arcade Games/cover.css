@@ -20,9 +20,14 @@ a:hover {
 	border: .05rem solid #fff;
 }
 
+.subtitulo{
+	font-family: 'Press Start 2P', cursive;
+}
+
 @font-face {
 	font-family: ApertureFont;
 	src: url("fonts/aperture2.0-webfont.woff2");
+	z-index: 8000;
 }
 
 /*
@@ -33,11 +38,137 @@ html,
 body {
 	height: 100%;
 	background-color: #333;
-	background-image: url("img/universo.jpg");
+	background-image: url("img/fondo2.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
+
+/*
+ * Imagenes Homer
+ */
+
+.tetris12A{
+    width: 28%;
+    position: absolute;
+    right: -5%;
+    top: 7%;
+}
+
+.tetris12B{
+    width: 27%;
+    position: absolute;
+    right: 10.5%;
+    top: 41%;
+}
+
+.tetris10{
+    width: 28%;
+    position: absolute;
+    left: -10%;
+    top: 5%;
+}
+
+.tetris7{
+    width: 27%;
+    position: absolute;
+    right: -5%;
+    top: 20%;
+}
+
+.tetris8{
+    width: 27%;
+    position: absolute;
+    left: -2.7%;
+    top: 24%;
+}
+
+.tetris9{
+    width: 23%;
+    position: absolute;
+    left: -5%;
+    top: 55%;
+}
+
+.tetris11A{
+    width: 27%;
+    position: absolute;
+    right: -4.5%;
+    top: 55%;
+}
+
+.tetris11B{
+    width: 27%;
+    position: absolute;
+    left: 12.5%;
+    top: -4%;
+}
+
+/*Imagenes de lo demas*/
+
+
+/*
+ * Imagenes Homer
+ */
+
+ .tetris12A-J{
+    width: 28%;
+    position: absolute;
+    right: -8.6%;
+    top: 6.8%;
+}
+
+.tetris12B-J{
+    width: 27%;
+    position: absolute;
+    right: 13.7%;
+	top: 56%;
+	z-index: 20;
+}
+
+.tetris10-J{
+    width: 28%;
+    position: absolute;
+    left: -14%;
+    top: 5%;
+}
+
+.tetris7-J{
+    width: 27%;
+    position: absolute;
+    right: -9%;
+    top: 20%;
+}
+
+.tetris8-J{
+    width: 27%;
+    position: absolute;
+    left: -6.7%;
+    top: 24%;
+}
+
+.tetris9-J{
+    width: 23%;
+    position: absolute;
+    left: -9%;
+    top: 55%;
+}
+
+.tetris11A-J{
+    width: 27%;
+    position: absolute;
+    right: -8.5%;
+    top: 55%;
+}
+
+.tetris11B-J{
+    width: 27%;
+    position: absolute;
+    left: 8.3%;
+	top: -3.8%;
+	z-index: 21;
+}
+
 
 body {
 	display: -ms-flexbox;
@@ -158,4 +289,82 @@ body {
 
 .card-text {
 	color: #000000;
+}
+
+/*botones xdd*/
+
+.movimiento{
+	animation:  bajar-subir2 2s ease infinite;
+}
+
+@keyframes bajar-subir2 {
+    0% {transform: translateY(15px);}
+    25% {transform: translateY(0);}
+	100% {transform: translateY(15px);}
+}
+
+/*pixels*/
+
+.nave{
+	animation:  bajar-subir1 10s ease infinite;
+}
+
+.corazon{
+	animation:  der-izq1 6s ease infinite;
+}
+
+
+@keyframes bajar-subir1 {
+    5% {transform: translateY(50px);transform: rotate(45deg);}
+    25% {transform: translateY(250px);}
+    100% {transform: translateY(50px);transform: rotate(45deg);}
+}
+
+@keyframes der-izq1 {
+    0% {transform: translate(100px);}
+    25% {transform: translate(0);}
+    100% {transform: translate(100px);}
+}
+
+.flapy{
+	animation:  der-izq2 25s ease infinite;
+}
+
+@keyframes der-izq2 {
+    0% {transform: translate(0px);}
+	25% {transform: translate(800px);}
+	50% {transform: translate(1400px);}
+    100% {transform: translate(1900px);}
+}
+
+
+
+.andro1{
+	animation: locura1 1s ease infinite;
+}
+
+@keyframes locura1 {
+	0% {transform: rotate(45deg);}
+	50% {transform: rotate(-45deg);}
+	100% {transform: rotate(45deg);}
+}
+
+.andro2{
+	animation: locura1 10s ease infinite;
+}
+
+@keyframes locura1 {
+	0% {transform: rotate(-45deg);}
+	50% {transform: rotate(45deg);}
+	100% {transform: rotate(-45deg);}
+}
+
+.pacman1{
+	animation: der-izq3 10s ease infinite;
+}
+
+@keyframes der-izq3 {
+    0% {transform: translate(-190px);}
+	50% {transform: translate(1140px);}
+	100% {transform: translate(-190px);}
 }

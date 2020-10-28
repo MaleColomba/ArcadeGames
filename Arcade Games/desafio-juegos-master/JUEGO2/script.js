@@ -190,7 +190,7 @@
         // Draw food
         //ctx.fillStyle = '#f00';
         //food.fill(ctx);
-        ctx.strokeStyle = '#f00';
+        ctx.strokeStyle = 'black';
         food.drawImage(ctx, iFood);
 
         // Debug last key pressed
@@ -205,7 +205,7 @@
             ctx.textAlign = 'center';
             if (gameover) {
                 ctx.font = "30px Calibri";
-                ctx.fillStyle = "black";
+                ctx.fillStyle = "white";
                 ctx.fillText('GAME OVER', 350, 170);
             } else {
                 ctx.fillText('Pausa', 300, 100);

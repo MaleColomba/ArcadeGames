@@ -6,6 +6,7 @@
         <!--[if lte IE 8]><meta http-equiv="X-UA-Compatible" content="chrome=1" /><![endif]-->
         <link rel="stylesheet" href="../../style.css">
         <link href="../../cover.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <title>SNAKE</title>
 
         <!-- Bootstrap core CSS -->
@@ -40,7 +41,7 @@
                 </div>
             </header>
         
-            <main role="main" class="inner cover">
+            <main role="main" class="inner cover" style="position: relative; z-index: 336;">
                 <canvas id="canvas" width="700" height="350" style="background:#999; margin-left: 10%; margin-top: 10%; border: 10px solid rgb(180, 179, 179);">
                     [Canvas not supported by your browser]
                 </canvas></p>
@@ -48,15 +49,26 @@
                 <br>
             </main>
         
-            <footer class="mt-auto cover">
+            <footer class="mt-auto cover" style="position: relative; z-index: 335;">
                 <p class="lead">
-                    <a href="../../jugar.html" class="btn btn-lg btn-secondary" style="width: 300px; height: 100px; font-size: 32px;">Menu de Selección</a>
+                    <a href="../../jugar.html" class="btn btn-lg btn-secondary subtitulo movimiento" style="width: 300px; height: 100px; font-size: 24px;">Menu de Selección</a>
                 </p>
                 <br>
                 <br>
                 <br>
             </footer>
 
+            
+
         <script type="application/javascript" src="script.js"></script>
     </body>
+
+            <div>
+
+                <img src="../../img/tetris2.png" alt="2" style="position: absolute; width: 140%; left: -18%; bottom: 0%; z-index: 26;">
+
+                <img src="../../img/pacman.png" alt="pacman" class="pacman1" style="width: 50%; left: -15%; top: 1%; position: absolute; z-index: 45;">
+                
+            </div>
+
 </html>

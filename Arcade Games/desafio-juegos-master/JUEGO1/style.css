@@ -8,7 +8,7 @@
     height: 550px;
     border: 1px solid black;
     margin: auto;
-    background-color: rgb(102, 0, 146);
+    background-color: purple;
 }
 
 #character{
@@ -34,8 +34,16 @@
 .hole{
     width: 40px;
     height: 20px;
-    background-color: rgb(102, 0, 146);
+    background-color: purple;
     position: relative;
     top: 300px;
     margin-top: -20px;
+}
+
+.tetris-juego{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: -5%;
+    z-index: 22;
 }
